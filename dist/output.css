@@ -1368,11 +1368,11 @@ video {
 }
 
 .placeholder-placeHolderShade::-moz-placeholder {
-  color: ##ababac;
+  color: #ababac;
 }
 
 .placeholder-placeHolderShade::placeholder {
-  color: ##ababac;
+  color: #ababac;
 }
 
 .outline-hidden {
