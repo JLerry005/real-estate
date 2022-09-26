@@ -4,10 +4,577 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="dist/output.css">
+    <title>Real Estate</title>
+    <!-- Tailwind CSS Link -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- FlowBite LInk -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style> 
 </head>
-<body class="bg-yellow-600">
-    <p class="text-xl text-yellow-500">Sample Text</p>
+<body class="bg-lightShades box-border">
+    <!-- Header Section -->
+    <header>
+        <!-- Nav Bar -->
+        <nav class="fixed w-full">
+            <!-- Search and Button -->
+            <div class="flex items-center h-20 md:flex md:justify-between md:items-center md:h-20 bg-darkShades md:px-24 ">
+                <!-- Search -->
+                <div class="relative flex items-center">
+                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightShades">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>   
+                    </div> 
+                    <input class="text-sm block p-2 pl-10 w-fit bg-transparent text-lightShades placeholder-placeHolderShade rounded-lg border-none outline-hidden focus:outline-none focus:ring-2 focus:ring-teal-500" type="search" name="search" id="search" placeholder="Seach by Address or Area">
+                </div>
+                <!-- Button -->
+                <div class="">
+                    <div class="relative flex flex-row items-center">
+                        <button class="bg-lightAccent text-darkShades text-[10px] h-9 md:w-64 rounded-lg text-center md:font-medium md:text-md md:tracking-wide">BOOK AN APPOINTMENT</button>
+                        <div class="flex absolute right-2 items-center pl-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-darkShades font-bolder">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Sub Nav Bar -->
+        <div class="bg-fixed h-[600px] bg-red-500 bg-no-repeat bg-cover" style="background-image: url(./assets/background/header-bg.png)">
+            <nav class="flex items-center gap-x-1 h-[105px] px-24">
+                <div class="mt-[190px]">
+                    <img src="./assets/logo/jh-sereno-logo.svg" alt="">
+                </div>
+                <div class="block mt-[190px] ml-[120px] text-xs text-lightShades font-medium">
+                    <ul class="flex items-center">
+                        <li class="px-4 hover:text-lightAccent tracking-widest"> 
+                            <a href="...">MEET THE TEAM</a>
+                        </li>
+                        <li class="px-4 hover:text-lightAccent tracking-widest"> 
+                            <a href="...">SEARCH FOR HOMES</a>
+                        </li>
+                        <li class="px-4 hover:text-lightAccent tracking-widest"> 
+                            <a href="...">OUR COMMUNITIES</a>
+                        </li>
+                        <li class="px-4 hover:text-lightAccent tracking-widest"> 
+                            <a href="...">HOME VALUATION</a>
+                        </li>
+                        <li class="px-4 hover:text-lightAccent tracking-widest"> 
+                            <a href="...">SERVICES</a>
+                        </li>
+                        <li class="px-4 hover:text-lightAccent tracking-widest">
+                            <a href="...">HOME ACCROSS AMERICA</a>
+                        </li>
+                        <li class="px-4 hover:text-lightAccent tracking-widest"> 
+                            <a href="...">TESTIMONIALS</a>
+                        </li>
+                        <li class="px-4 hover:text-lightAccent tracking-widest"> 
+                            <a href="...">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="flex justify-center items-center mt-52 text-[96px] font-thin tracking-widests text-lightShades">
+                <p>SERVICES</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Two -->
+    <main>
+        <section>
+            <div class="h-[1051px] bg-white">
+                <p class="text-center pt-[165px] text-[32px]">Comprehensive Marketing Plan</p>
+
+                <div class="flex justify-center items-center mt-[70px]">
+                    <div class=" w-[429px] h-[300px] mx-12 flex flex-col items-center text-center">
+                        <img class="pt-8 h-[150px] w-[120px]" src="./assets/icons/icon-mail.png" alt="">
+                        <div class="mt-8 ">
+                            <p class="font-bold text-2xl mb-4">Responsive</p>
+                            <p>I am always available via phone, text, or email.</p>
+                        </div>
+                    </div>
+                    
+                    <div class=" w-[429px] h-[300px] mx-12 flex flex-col items-center text-center">
+                        <img class="pt-8 h-[150px] w-[120px]" src="./assets/icons/icon-flag.png" alt="">
+                        <div class="mt-8">
+                            <p class="font-bold text-2xl mb-4 tracking-wider ">Syndication</p>
+                            <p>I market your property locally, nationally, and internationally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center mt-[60px]">
+                    <div class=" w-[429px] h-[300px] mx-12 flex flex-col items-center text-center">
+                        <img class="pt-8 h-[150px] w-[120px]" src="./assets/icons/icon-map.png" alt="">
+                        <div class="mt-8">
+                            <p class="font-bold text-2xl mb-4">Virtual Tour</p>
+                            <p>Let's make your home stand out with a high quality virtual tour.</p>
+                        </div>
+                    </div>
+                    
+                    <div class=" w-[429px] h-[300px] mx-12 flex flex-col items-center text-center">
+                        <img class="pt-8 h-[150px] w-[120px]" src="./assets/icons/icon-photography.png" alt="">
+                        <div class="mt-8">
+                            <p class="font-bold text-2xl mb-4 tracking-wider ">Photography</p>
+                            <p>Beatiful, high-end photography is a central part of our marketing plan for your property.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Three -->
+        <section>
+            <div class="h-[924px] bg-lightAccent">
+                <!-- First Content -->
+                <div class="h-[462px] bg-darkShades flex justify-between">
+                    <div class="text-white px-24">
+                        <p class="text-[32px] pt-[121px] tracking-wider">My Staging Expertise</p>
+                        <ul class="pt-8 text-lightShades text-[15px]">
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Unclutter and organize your home</li>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Neatly arrange drawers and cabinets</li>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Keep pets outdoors or off the premises</li>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Play soft music</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="w-[950px] bg-no-repeat bg-cover" style="background-image: url(./assets/background/expertise-bg.png)">
+                    </div>
+                </div>
+                <!-- Second Content -->
+                <div class="h-[462px] bg-mainBrandColor flex justify-between">
+                    <div class="w-[952px] bg-no-repeat bg-cover" style="background-image: url(./assets/background/expertise-bg.png)">
+                    </div>
+                    <div class="text-white absolute right-[590px]">
+                        <p class="text-[32px] pt-[121px] tracking-wider">Intentional Layout</p>
+                        <ul class="pt-8 text-lightShades text-[15px]">
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Unclutter and organize your home</li>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Neatly arrange drawers and cabinets</li>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Keep pets outdoors or off the premises</li>
+                            </div>
+                            <div class="flex items-center py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-lightAccent">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                                </svg>
+                                <li>&nbsp; Play soft music</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Three -->
+        <section class="h-[1115px] text-mainBlack">
+            <div class=" pt-[163px] mx-24">
+                <!-- The Selling Process -->
+                <div class="w-full h-[370px] mb-[100px]">
+                    <p class="text-[32px] tracking-widest">The Selling Process</p>
+                    <div class="flex items-center">
+                        <!-- First Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3 mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-lightAccent rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">1</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Initial Consultation & Planning</h1>
+                                <p class="pt-5 text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <!-- Second Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3  mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-lightAccent rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">2</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Devise & Execute Marketing Plan</h1>
+                                <p class="pt-5 text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <!-- Third Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3  mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-lightAccent rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">3</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Review Offers & Reach Agreement with Buyer</h1>
+                                <p class="text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3  mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-lightAccent rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">4</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Complete Transaction Process</h1>
+                                <p class="pt-5 text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>                        
+
+                        <!-- Fifth Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3  mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-lightAccent rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">5</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">After - Sale Service</h1>
+                                <p class="pt-5 text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>   
+
+                        </div>
+                    </div>
+
+
+                <!-- The Buying Process -->
+                <div class="w-full h-[370px]">
+                    <p class="text-[32px] tracking-widest">The Buying Process</p>
+                    <div class="flex items-center">
+                        <!-- First Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3 mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-darkShades rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">1</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Initial Consultation & Planning</h1>
+                                <p class="pt-5 text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <!-- Second Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3  mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-darkShades rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">2</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Search for a Home & Get Pre-Approved</h1>
+                                <p class="pt-5 text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <!-- Third Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3  mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-darkShades rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">3</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Submit an Offer</h1>
+                                <p class="text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+
+                        <!-- Fourth Card -->
+                        <div class="bg-white w-80 h-[290px] pl-[12px] mt-6 border-2 border-darkShades rounded-lg px-3  mx-2">
+                            <!-- Header -->
+                            <div class="w-[50px] h-[50px] bg-darkShades rounded-full text-center pt-1 mt-[16px]">
+                                <p class="text-[32px] text-lightShades">4</p>
+                            </div>
+                            <!-- Body -->
+                            <div class="mt-[23px]">
+                                <h1 class="text-[16px] font-semibold pb-[18px]">Complete Settlement Process</h1>
+                                <p class="pt-5 text-[14px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>                             
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Fourth -->
+        <section class="h-[1460px]">
+            <!-- First Content -->
+            <div class="h-[470px] bg-red-200 bg-fixed bg-no-repeat bg-cover bg-center py-5" style="background-image: url(./assets/background/first-bg.png);">
+                <div class="flex flex-row items-center">
+                    <img class="w-96 h-96 ml-32 mt-4 rounded-xl" src="./assets/img/first.png" alt="">
+                    <div class="text-white px-24">
+                        <h1 class="text-[32px] pb-6">Over 33 Years of Real Estate Success</h1>
+                        <p class="text-[18px]">We provide every one of our clients with a level of service they won’t find anywhere else. We give them what they need, often before they know they need it. ​​​​​​​In real estate, almost everything can be negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. ​​And it’s an experience like no other.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Content -->
+            <div class="h-[470px] bg-red-200 bg-fixed bg-no-repeat bg-cover bg-center mt-[10px] py-5" style="background-image: url(./assets/background/second-bg.png);">
+                <div class="flex flex-row items-center">
+                    <div class="text-white px-32">
+                        <h1 class="text-[32px] pb-6">We Want To Create An Unforgettable Experience For You...</h1>
+                        <p class="text-[18px]">We combine data gained from your home’s Comparative Market Analysis with local market research to create a marketing plan designed to help you meet your selling goals. Your home’s carefully designed plan will include a range of online, print, and other marketing tools targeted to the best-qualified pool of buyers. Successfully marketing a home in today’s real estate environment requires a firm with experience and flexibility. Hansen Partners provides both.</p>
+                    </div>
+                    <img class="w-96 h-96 mr-32 mt-4 rounded-xl" src="./assets/img/second.png" alt="">
+                </div>
+            </div>
+
+            <!-- Third Content -->
+            <div class="h-[500px] bg-red-200 bg-fixed bg-no-repeat bg-cover bg-center mt-[10px] py-12" style="background-image: url(./assets/background/third-bg.png);">
+                <div class="flex flex-row items-center">
+                    <img class="w-96 h-96 ml-32 mt-4 rounded-xl " src="./assets/img/third.png" alt="">
+                    <div class="text-white px-24">
+                        <h1 class="text-[32px] pb-6">The Hansen Partners Communications Tablet</h1>
+                        <p class="text-[18px]">We have created this as a wonderful tool so that we can communicate with you daily, provide you with updates on what is happening with your home. We are available at the with a click of your tablet.</p>
+                        <p class="py-5 text-[22px]">Benefits:</p>
+                        <div class="pl-7 pb-5">
+                            <li>Review all documents and sign in the comfort of your home or anywhere.</li>
+                            <li>Stay up to date on all marketing activities, review materials, photos, etc. in real time.</li>
+                            <li>Meet with us face to face on our Gotomeeting.com platform to go over and discuss the events of the week.</li>
+                            <li>You have your own email assigned just for you and your common space to quickly write a note, or quickly send a video message to us for fast communication using our Bomb bomb video messaging system.</li>
+                        </div>
+                        <p>We believe that transparency and guiding you and your family through the process is key to having the best experience.  During these uncertain times. It is a good feeling to know you have some one with a proven track record you can count on. We will be here to handle your needs during the Real Estate process. We think of it before a need even arises. Because, that is just what we do. Who you work with does matter! </p>
+                    </div>
+                </div>
+            </div>           
+        </section>
+
+        <!-- Section Five-->
+        <section class="h-[895px] bg-darkShades text-lightShades">
+            <!-- Container -->
+            <div class="pt-[162px] text-center">
+                <h1 class="text-[32px] font-semibold tracking-widest text-lightAccent">We Market Your Home to The World</h1>
+                <h2 class="text-[18px]">Our Online Marketing Strategy</h2>
+                <p class="text-[16px] px-96 pt-[30px]">​​​​​​​The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is vital that your home be marketed online to audiences locally, nationally, and internationally.</p>    
+                <div class="flex justify-center items-center space-x-[25px] mt-[88px]">
+                    <!-- First Card -->
+                    <div class="w-[430px] h-[380px] border-2 border-lightAccent rounded-xl">
+                        <h1 class="text-[24px] pt-[70px] pb-[28px]">Local Exposure</h1>
+                        <p class="text-left px-12">Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.</p>    
+                    </div>
+                    <!-- Second Card -->
+                    <div class="w-[430px] h-[380px] border-2 border-lightAccent rounded-xl">
+                        <h1 class="text-[24px] pt-[70px] pb-[28px]">National Exposure</h1>
+                        <p class="text-left px-12 pb-5">We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more consumers to your home and increasing exposure. We  will receive every inquiry about your property directly.</p>
+                    </div>
+                    <!-- Third Card -->
+                    <div class="w-[430px] h-[380px] border-2 border-lightAccent rounded-xl">
+                        <h1 class="text-[24px] pt-[70px] pb-[28px]">International Exposure</h1>
+                        <p class="text-left px-12 pb-5">To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, China.apr.com, Caimeiju, Juwai, Country Life UK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Six -->
+        <section class="h-[250px] bg-lightShades">
+            <div class="flex justify-center items-center space-x-28">
+                <img class="w-60 h-60" src="./assets/logo/realtor-logo.png" alt="realtor-logo">
+                <img class="w-60 h-24" src="./assets/logo/trulia-logo.png" alt="realtor-logo">
+                <img class="w-60 h-60" src="./assets/logo//zikllow-logo.png" alt="realtor-logo">
+            </div>
+        </section>
+
+        <!-- Section Seven -->
+        <section class="h-[700px] bg-darkShades">
+            <div class="pt-[100px]">
+                <h1 class="text-lightShades text-center text-[32px] tracking-widests font-semibold">OUR PARTNERS IN <span class="text-lightAccent">LUXURY</span></h1>
+            </div>
+            <div class="flex justify-center items-center space-x-14 mt-20">
+                <img src="./assets/img/1st-card.svg" alt="">
+                <img src="./assets/img/2nd-card.svg" alt="">
+                <img src="./assets/img/3rd-card.svg" alt="">
+            </div>
+            <div class="text-center text-lightShades mt-12 space-y-5 text-[18px]">
+                <p>Leading Real Estate Companies of The World® & Luxury Portfolio International</p>
+                <p class="px-52">JRockcliff is a founding member of Luxury Portfolio International®, the luxury division of Leading Real Estate Companies of the World®. With more than 500 member firms around the world, Our luxury listings are exposed to a vast global audience and reach potential buyers and investors in over 50 countries.</p>
+                <p>Who's Who in Luxury Real Estate</p>
+                <p>Who’s Who in Luxury Real Estate is a global collection of luxury real estate brokers.</p>
+            </div>
+        </section>
+
+        <!-- Section Eigth -->
+        <section class="h-[700px] bg-white text-mainBlack">
+            <div class="pt-[100px]">
+                <h1 class="text-center text-[32px] tracking-widests font-semibold">WE'RE <span class="text-lightAccent">GLOBAL</span></h1>
+            </div>
+            <p class="px-64 pt-16 text-center text-[18px]">Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:</p>
+            <div class="flex justify-center items-center space-x-14 mt-20">
+                <img src="./assets/img/1st-card.svg" alt="">
+                <img src="./assets/img/2nd-card.svg" alt="">
+                <img src="./assets/img/3rd-card.svg" alt="">
+            </div>
+            <div class="text-center mt-12 space-y-5 text-[18px] px-56">
+                <p>We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing. </p>
+            </div>
+        </section>
+
+        <!-- Section Nine -->
+        <section class="h-[770px] bg-white text-mainBlack">
+            <div class="flex flex-row justify-center items-center space-x-16">
+                <div class="p-10">
+                    <img src="./assets/img/mobile-img.svg" alt="">
+                </div>
+                <div class="flex flex-col items-center space-y-12">
+                    <!-- first card -->
+                    <div class="h-28 w-[500px] flex items-center space-x-2">
+                        <img class="w-40 h-40" src="./assets/icons/icon-mail.png" alt="">
+                        <div>
+                            <h1 class="text-xl text-semibold tracking-widest pb-3">Responsive</h1>
+                            <p class="text-sm">I am always available via phone, text, or email to answer your questions in a timely manner.</p>
+                        </div>
+                    </div>
+                    <!-- Second card -->
+                    <div class="h-28 w-[500px] flex items-center space-x-2">
+                        <img class="w-40 h-40" src="./assets/icons/icon-flag.png" alt="">
+                        <div>
+                            <h1 class="text-xl text-semibold tracking-widest pb-3">Syndication</h1>
+                            <p class="text-sm">I market your property locally, nationally, and internationally..</p>
+                        </div>
+                    </div>
+                    <!-- Third card -->
+                    <div class="h-28 w-[500px] flex items-center space-x-2">
+                        <img class="w-40 h-40" src="./assets/icons/icon-map.png" alt="">
+                        <div>
+                            <h1 class="text-xl text-semibold tracking-widest pb-3">Virtual Tour</h1>
+                            <p class="text-sm">Let’s make your home stand out with a high quality virtual tour.</p>
+                        </div>
+                    </div>
+                    <!-- Fourt card -->
+                    <div class="h-28 w-[500px] flex items-center space-x-2">
+                        <img class="w-40 h-40" src="./assets/icons/icon-drone.png" alt="">
+                        <div>
+                            <h1 class="text-xl text-semibold tracking-widest pb-3">Drone Photography</h1>
+                            <p class="text-sm">Beautiful photography is a central part of our marketing plan for your property.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Ten -->
+        <section class="bg-fixed bg-center h-96 bg-contain" style="background-image: url(./assets/background/work-bg.png);">
+            <div class="flex flex-col justify-center items-center text-lightShades text-center h-full space-y-12">
+                <h1 class="text-[32px] tracking-widests">Work With Us!</h1>
+                <p class="px-96 text-[18px]">With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your dreams are a reality. Let us guide you through your home buying journey, contact us today!</p>
+                <button class="p-3 w-40 border-2 border-lightAccent font-bold rounded-lg">Contact Us</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-4 bg-darkShades sm:p-6 text-lightShades">
+        <div class="md:flex md:justify-between mx-40 py-16">
+            <div class="mb-6 md:mb-0 ">
+                <a href="https://hansenpartners.net/">
+                    <span class="self-center text-2xl font-semibold text-white">Julie Hansen Partnership </span>
+                </a>
+                <p class="pr-60">An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.</p>
+
+                <div class="mt-10 space-y-5">
+                    <h1 class="text-2xl">Newsletter</h1>
+                    <p>Subscribe to our Newsletter for latest news and updates. Stay tuned! </p>
+                    <div class="flex flex-col items-start space-y-3">
+                        <input type="text" class="w-72 bg-transparent border border-lightAccent text-lightShades rounded-lg" placeholder="Email Address">
+                        <button class="p-2 w-36 bg-lightAccent text-mainBlack rounded-md">SUBSCRIBE</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase">Address</h2>
+                    <ul class="text-lightShades">
+                        <li class="mb-4">
+                            <p>5075 Hopyard Road, Suite 110 Pleasanton, CA 94588</p>
+                        </li>
+                        <li>
+                            <p>​​​​​​​Julie Hansen-Orvis | CA DRE# 00934447</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-10">
+                    <h2 class="mb-6 w-48 text-sm font-semibold text-white uppercase">Contact Information</h2>
+                    <ul class="text-lightShades">
+                        <li class="mb-4">
+                            <a href="https://github.com/themesberg/flowbite" class="hover:underline ">(925) 980-4925</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">hansenpartners.re@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center">© 2022 <a href="https://flowbite.com/" class="hover:underline">JH|Sereno-</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                    <span class="sr-only">Instagram page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" class="w-5 h-5" style=" fill:#6b7280;"><path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 16 12 C 14.35499 12 13 13.35499 13 15 C 13 16.64501 14.35499 18 16 18 C 17.64501 18 19 16.64501 19 15 C 19 13.35499 17.64501 12 16 12 z M 16 14 C 16.564129 14 17 14.435871 17 15 C 17 15.564129 16.564129 16 16 16 C 15.435871 16 15 15.564129 15 15 C 15 14.435871 15.435871 14 16 14 z M 14 19 A 1.0001 1.0001 0 0 0 13 20 L 13 35 A 1.0001 1.0001 0 0 0 14 36 L 18 36 A 1.0001 1.0001 0 0 0 19 35 L 19 20 A 1.0001 1.0001 0 0 0 18 19 L 14 19 z M 22 19 A 1.0001 1.0001 0 0 0 21 20 L 21 35 A 1.0001 1.0001 0 0 0 22 36 L 26 36 A 1.0001 1.0001 0 0 0 27 35 L 27 27.5 C 27 26.120455 28.120455 25 29.5 25 C 30.879545 25 32 26.120455 32 27.5 L 32 30 L 32 35 A 1.0001 1.0001 0 0 0 33 36 L 37 36 A 1.0001 1.0001 0 0 0 38 35 L 38 26.5 C 38 22.36961 34.63039 19 30.5 19 C 29.213528 19 28.059744 19.41615 27 19.990234 A 1.0001 1.0001 0 0 0 26 19 L 22 19 z M 15 21 L 17 21 L 17 34 L 15 34 L 15 21 z M 23 21 L 25 21 L 25 21.816406 A 1.0001 1.0001 0 0 0 26.693359 22.537109 C 27.684186 21.585305 29.016683 21 30.5 21 C 33.54961 21 36 23.45039 36 26.5 L 36 34 L 34 34 L 34 30 L 34 27.5 C 34 25.029545 31.970455 23 29.5 23 C 27.029545 23 25 25.029545 25 27.5 L 25 34 L 23 34 L 23 21 z"></path></svg>                    
+                    <span class="sr-only">LinkedIn account</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+      <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
 </html>

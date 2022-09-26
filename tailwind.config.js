@@ -7,6 +7,7 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     screens: {
+      xs: '375px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -41,6 +42,13 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      'lightShades': '#EAE8E4',
+      'lightAccent': '#F1A52C',
+      'mainBrandColor': '#776B65',
+      'darkAccent': '#39C4E0',
+      'darkShades': '#181E2A',
+      'placeHolderShade': '##ababac',
+      'mainBlack' : '#1E1E1E'
     }),
     columns: {
       auto: 'auto',
@@ -364,6 +372,7 @@ module.exports = {
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
+        '"Josefin Sans"', 'sans-serif'
       ],
       serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
@@ -589,6 +598,7 @@ module.exports = {
       wide: '0.025em',
       wider: '0.05em',
       widest: '0.1em',
+      widests: '.25em',
     },
     lineHeight: {
       none: '1',
