@@ -47,7 +47,7 @@ module.exports = {
       'mainBrandColor': '#776B65',
       'darkAccent': '#39C4E0',
       'darkShades': '#181E2A',
-      'placeHolderShade': '##ababac',
+      'placeHolderShade': '#ababac',
       'mainBlack' : '#1E1E1E'
     }),
     columns: {
